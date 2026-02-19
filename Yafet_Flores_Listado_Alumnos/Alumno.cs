@@ -44,8 +44,12 @@ namespace Yafet_Flores_Listado_Alumnos
             this.apellido = apellido;
             this.fechaNacimiento=fechaNacimiento;
             this.nota = nota;
-        } 
-            
-        
+        }
+
+        public override string ToString()
+        {
+            return $"Nombre: {Nombre}, Apellido: {Apellido}, Fecha: {FechaNacimiento}, Nota: {Nota}";
+        }
+
     }
 }
